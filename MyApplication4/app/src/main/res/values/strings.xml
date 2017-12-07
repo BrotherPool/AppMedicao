@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="tipo_de_lampada">
+        <item>Selecione um Tipo de Lâmpada...</item>
+        <item>AL</item>
+        <item>FL</item>
+        <item>IN</item>
+        <item>LD</item>
+        <item>ME</item>
+        <item>MX</item>
+        <item>SF</item>
+        <item>VM</item>
+        <item>VS</item>
+    </string-array>
+    <string-array name="Acervo">
+        <item>Selecione um Acervo de Fiscalização...</item>
+        <item>B4A</item>
+        <item>B4B</item>
+        <item>B4BD</item>
+    </string-array>
+    <string name="title_activity_main4">Main4Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main5">Main5Activity</string>
+    <string name="title_activity_map">Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_testederange">testederange</string>
+</resources>

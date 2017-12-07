@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.myapplication.Main2Activity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- pra bloquear o campo android:focusable="false" -->
+
+            <EditText
+                android:id="@+id/Municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Município"
+                android:inputType="textPersonName" />
+
+
+            <EditText
+                android:id="@+id/Endereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Endereço"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Bairro"
+                android:inputType="textPersonName" />
+
+
+            <Spinner
+                android:id="@+id/lamp"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/PotPlain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:ems="10"
+                android:hint="Digite a Potência"
+                android:inputType="number"
+                android:maxLength="6" />
+
+            <Spinner
+                android:id="@+id/Acervo"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog" />
+
+            <EditText
+                android:id="@+id/medidor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="N° Medidor de Fiscalização"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/placa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="N° Placa de Indentificação"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/UtmX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="UTM X: "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/UtmY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="UTM Y: "
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/continuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="salvarTxt"
+                android:text="Prosseguir" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
